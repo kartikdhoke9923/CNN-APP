@@ -1,0 +1,113 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    margin: 0; 
+    padding: 20px; 
+    min-height: 100vh;
+}
+
+.container { 
+    max-width: 600px; 
+    margin: auto; 
+    background: white; 
+    padding: 40px; 
+    border-radius: 20px; 
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 { 
+    color: #333; 
+    margin-bottom: 10px;
+    font-size: 2.2em;
+}
+
+.upload-area { 
+    margin: 30px 0; 
+    padding: 30px;
+    border: 3px dashed #ddd;
+    border-radius: 15px;
+    background: #f9f9f9;
+    transition: all 0.3s;
+}
+
+.upload-area:hover {
+    border-color: #667eea;
+    background: #f0f4ff;
+}
+
+.file-label {
+    display: inline-block;
+    background: #667eea;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-bottom: 20px;
+}
+
+.file-label:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+}
+
+.preview-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#preview { 
+    max-width: 280px; 
+    max-height: 280px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+#predictBtn { 
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white; 
+    padding: 15px 40px; 
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    font-size: 18px; 
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(102,126,234,0.4);
+}
+
+#predictBtn:hover:not(:disabled) { 
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(102,126,234,0.6);
+}
+
+#predictBtn:disabled { 
+    background: #ccc; 
+    cursor: not-allowed;
+    transform: none;
+}
+
+#results { 
+    margin-top: 30px; 
+    text-align: left;
+}
+
+.prediction { 
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    padding: 20px; 
+    margin: 15px 0; 
+    border-radius: 15px; 
+    border-left: 5px solid #2196f3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.prediction strong {
+    color: #1976d2;
+    font-size: 1.2em;
+}

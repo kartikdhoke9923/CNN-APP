@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexNet CIFAR-10 Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🧠 AlexNet CIFAR-10 Classifier</h1>
+        <p style="text-align: center; color: #666;">Upload an image (airplane, car, cat, etc.)</p>
+        
+        <div class="upload-area">
+            <label for="imageInput" class="file-label">
+                📁 Choose Image (JPG/PNG)
+            </label>
+            <input type="file" id="imageInput" accept="image/*" style="display: none;">
+            
+            <div class="preview-container">
+                <img id="preview" src="" alt="Image Preview" style="display: none;">
+            </div>
+            
+            <button id="predictBtn" disabled>Preview Image</button>
+        </div>
+        
+        <div id="results"></div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
