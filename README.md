@@ -1,7 +1,7 @@
 # AlexNet CIFAR-10 Image Classifier
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x350/667eea/ffffff?text=AlexNet+CIFAR-10+Demo" alt="Demo">
+  <img src="https://github.com/kartikdhoke9923/CNN-APP/raw/main/static/uploads/demo.gif" alt="Demo" width="600">
   <br><br>
   <img src="https://img.shields.io/badge/Accuracy-76.7%25-brightgreen.svg" alt="Accuracy">
   <img src="https://img.shields.io/badge/Flask-3.0-blue.svg" alt="Flask">
